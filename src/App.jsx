@@ -26,10 +26,10 @@ const App = () => {
   return (
     <div className="App">
 
-      <div className="fixed top-4 right-4">
+      <div className="fixed top-4 right-4 z-50 sm:top-6 sm:right-6">
         <button
           onClick={toggleTheme}
-          className="bg-gray-800 text-white px-6 py-3 rounded-full shadow-md hover:bg-gray-700 transition"
+          className="bg-gray-800 text-white px-4 py-2 rounded-full shadow-md hover:bg-gray-700 transition text-sm sm:text-base"
         >
           {isDarkMode ? '🌙 Light Mode' : '🌞 Dark Mode'}
         </button>

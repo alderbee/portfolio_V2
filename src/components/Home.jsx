@@ -57,7 +57,7 @@ function Home() {
         <div className="lg:mt-0 lg:w-1/2">
           <img
             src="././profile.png"
-            alt="Amita"
+            alt="Amit"
             className="rounded-full shadow-lg w-80 h-80 mx-auto lg:mx-0"
           />
         </div>

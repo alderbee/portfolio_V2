@@ -61,7 +61,7 @@ const Projects = () => {
               className="p-6 rounded-xl shadow-md hover:shadow-xl transition"
             >
 
-              <div className="flex items-center justify-between mb-2">
+              <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 mb-2">
                 <h2 className="text-2xl font-semibold">{project.name}</h2>
                 {project.link && (
                   <a

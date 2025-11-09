@@ -1,8 +1,14 @@
 const experienceData = [
+    {
+    title: "Software Engineer",
+    company: "ITF Group",
+    duration: "Oct 2025 - Present",
+    location: "Hazelwood, MO",
+  },
   {
     title: "Software Engineer Intern",
     company: "Rocket Close",
-    duration: "Jan 2025 - Present",
+    duration: "Jan 2025 - Sep 2025",
     location: "Tempe, AZ",
   },
   {
@@ -20,3 +26,6 @@ const experienceData = [
 ];
 
 export default experienceData;
+
+
+

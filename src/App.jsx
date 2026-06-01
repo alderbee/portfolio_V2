@@ -3,7 +3,6 @@ import Home from './components/Home';
 import About from './components/About';
 import Projects from './components/Projects';
 import Experience from './components/Experience';
-import GetInTouch from './components/GetInTouch';
 import Footer from './components/Footer';
 import React, { useState, useEffect } from 'react';
 
@@ -40,7 +39,6 @@ const App = () => {
         <About />
         <Projects />
         <Experience />
-        <GetInTouch />
         <Footer />
       </div>
     </div>

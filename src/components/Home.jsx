@@ -1,17 +1,18 @@
 import React from 'react';
 import { useEffect, useState } from 'react';
 
+const PHRASES = ["Frontend Developer", "Backend Developer", "Full Stack Developer"];
+
 const Typewriter = () => {
   const [text, setText] = useState('');
   const [isTyping, setIsTyping] = useState(true);
   const [currentPhraseIndex, setCurrentPhraseIndex] = useState(0);
-  const phrases = ["Frontend Developer", "Backend Developer", "Full Stack Developer"];
 
   useEffect(() => {
     const interval = setInterval(() => {
       if (isTyping) {
-        if (text.length < phrases[currentPhraseIndex].length) {
-          setText((prev) => prev + phrases[currentPhraseIndex][text.length]);
+        if (text.length < PHRASES[currentPhraseIndex].length) {
+          setText((prev) => prev + PHRASES[currentPhraseIndex][text.length]);
         } else {
           setIsTyping(false);
         }
@@ -20,7 +21,7 @@ const Typewriter = () => {
           setText((prev) => prev.slice(0, -1));
         } else {
           setIsTyping(true);
-          setCurrentPhraseIndex((prevIndex) => (prevIndex + 1) % phrases.length);
+          setCurrentPhraseIndex((prevIndex) => (prevIndex + 1) % PHRASES.length);
         }
       }
     }, 100);
@@ -44,7 +45,8 @@ function Home() {
         <div className="text-center lg:text-left lg:w-1/2 lg:ml-34">
           <h1 className="text-5xl font-semibold mb-4">I'm Amit Vajrashetti 👋</h1>
           <p className="text-2xl">
-            Full-stack software engineer, crafting responsive user interfaces and building backends.
+            Full-stack software engineer, crafting responsive user interfaces and building back
+ends.
           </p>
           <p className="text-2xl font-semibold">
 
